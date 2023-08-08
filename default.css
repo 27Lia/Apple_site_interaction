@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+button {
+	background: transparent;
+	cursor: pointer;
+} 
+
+ol, ul, li {
+	list-style: none;
+}
