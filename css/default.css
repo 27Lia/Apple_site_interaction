@@ -2,6 +2,7 @@
     box-sizing: border-box;
     border: 0;
     margin: 0;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 img {
@@ -15,4 +16,11 @@ button {
 
 ol, ul, li {
 	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+p {
+	line-height: 1.6;
 }

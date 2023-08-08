@@ -1,0 +1,51 @@
+body {
+    overflow: hidden;
+    background-color: black;
+}
+a {
+    color: #c9c9ce; 
+}
+a:hover {
+    color: #ffffff;
+} 
+
+.nav-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.global-nav {
+    font-size: 10px;
+    height: 44px;
+}
+
+.global-nav-links, .product-nav-links {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.global-nav-links {
+    justify-content: space-between;
+}
+
+.product-nav {
+    font-size: 10px;
+    height: 52px;
+}
+
+.product-nav-links {
+    border-bottom: 1px solid rgba(255,255,255,0.24);
+}
+
+.product-name {
+    font-size: 21px;
+    font-weight:lighter;
+    flex:1;
+}
+
+.product-nav-item {
+    margin-left: 2em;
+}
