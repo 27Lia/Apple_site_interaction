@@ -17,6 +17,7 @@ a:hover {
 .global-nav {
     font-size: 10px;
     height: 44px;
+    position: relative;
 }
 
 .global-nav-links, .product-nav-links {
@@ -25,11 +26,42 @@ a:hover {
     margin: 0 auto;
     display: flex;
     align-items: center;
+
 }
 
 .global-nav-links {
     justify-content: space-between;
+
 }
+
+.global-nav-links li {
+    margin-right: 20px;
+    color: #ffffff;    
+    z-index: 1;
+  }
+
+
+  .global-nav-links li:hover .dropdown {
+    display:block;
+}
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 0; /* 드롭다운 박스가 네브바 위에서부터 시작하도록 설정 */
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #161617;
+    
+  }
+
+.dropdown-text {
+    position:relative;
+    top: 100px;
+    
+}
+
 
 .product-nav {
     font-size: 10px;
@@ -39,8 +71,8 @@ a:hover {
 .product-nav-links {
     border-bottom: 1px solid rgba(255,255,255,0.24);
 }
-
-.product-name {
+ 
+.product-name { 
     font-size: 21px;
     font-weight:lighter;
     flex:1;
@@ -49,3 +81,4 @@ a:hover {
 .product-nav-item {
     margin-left: 2em;
 }
+

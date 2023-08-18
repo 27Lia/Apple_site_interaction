@@ -16,6 +16,7 @@ button {
 
 ol, ul, li {
 	list-style: none;
+	padding: 0;
 }
 
 a {
