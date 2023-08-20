@@ -1,13 +1,16 @@
 body {
     overflow: hidden;
     background-color: black;
+
 }
+
 a {
-    color: #c9c9ce; 
+    color: #c9c9ce;
 }
+
 a:hover {
     color: #ffffff;
-} 
+}
 
 .nav-icon {
     width: 16px;
@@ -17,68 +20,88 @@ a:hover {
 .global-nav {
     font-size: 10px;
     height: 44px;
+    z-index: 1;
     position: relative;
 }
 
-.global-nav-links, .product-nav-links {
+
+.global-nav-links,
+.product-nav-links {
     max-width: 1000px;
     height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-
 }
 
 .global-nav-links {
     justify-content: space-between;
-
 }
 
-.global-nav-links li {
-    margin-right: 20px;
-    color: #ffffff;    
-    z-index: 1;
-  }
-
-
-  .global-nav-links li:hover .dropdown {
-    display:block;
+.container {
+    position: relative;
 }
 
-  .dropdown {
-    display: none;
+.dropdown {
     position: absolute;
-    top: 0; /* 드롭다운 박스가 네브바 위에서부터 시작하도록 설정 */
+    top: 0;
     left: 0;
-    width: 100%;
-    height: 200px;
     background-color: #161617;
-    
-  }
+    display: none;
+    width: 100%;
+    z-index: -1;
+}
+
+.global-nav li:hover .dropdown {
+    display: block;
+    height: 500px;
+    width: 100%;
+}
+
+.dropdown-text-container {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 50px;
+}
 
 .dropdown-text {
-    position:relative;
-    top: 100px;
-    
+    position: relative;
+    top: 80px;
+    color: #ffffff;
 }
 
+.dropdown-category-title {
+    margin-bottom: 5px;
+}
+
+.dropdown-category-sub-title {
+    font-size: 24px;
+}
+
+.dropdown-title {
+    margin-bottom: 5px;
+}
 
 .product-nav {
     font-size: 10px;
     height: 52px;
 }
 
+
+
 .product-nav-links {
-    border-bottom: 1px solid rgba(255,255,255,0.24);
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
 }
- 
-.product-name { 
+
+.product-name {
     font-size: 21px;
-    font-weight:lighter;
-    flex:1;
+    font-weight: lighter;
+    flex: 1;
 }
 
 .product-nav-item {
     margin-left: 2em;
+    font-size: 12px;
 }
-
